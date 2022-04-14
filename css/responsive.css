@@ -1,0 +1,49 @@
+/**** mobile screen ****/
+@media (max-width: 500px) {
+  .hero > p {
+    font-size: 15px;
+  }
+  .hero .button {
+    width: 140px;
+  }
+  /**** start Testimonials ****/
+  .testimonials .content .speech {
+    font-size: 15px;
+  }
+}
+
+/**** extra small screen ****/
+@media (max-width: 768px) {
+  /**** Start Header ****/
+  .hero {
+    width: auto;
+    margin-top: 100px;
+  }
+  .hero h1 {
+    font-size: 48px;
+  }
+  .hero > p {
+    margin-top: 25px;
+  }
+  
+  
+
+
+
+
+
+  /* **** */
+  .testimonials .content {
+    width: auto;
+  }
+  /* **** */
+}
+
+@media (max-width: 920px) {
+  .testimonials .left,
+  .testimonials .right {
+    top: auto;
+  }
+}
+
+
