@@ -1,29 +1,34 @@
 $(document).ready(function(){
-  // add Active to Tab
-  $('.features-1 .tabs .tab').click(function(){
-    $(this).addClass('active').siblings().removeClass('active')
-  })
 
   // navbar add active to links
-  $('.navigation .navbar .links li a').click(function(event){
-    event.preventDefault()
-    $(this).addClass('active').parent().siblings().children().removeClass('active')
+  $('.links ul:first-of-type li').click(function(){
+    $(this).addClass('active').siblings().removeClass('active')
   }) 
 
-  // switch icon of menu button
-  $('.menu-btn').click(function(){
-    $(this).children().toggleClass('fa-bars fa-times');
+  
+  // switch Hide Show Navigation Links
+  $('#menu-btn').click(function(){
 
-    // hide & show mobile navigation
-    $('.mobile-nav').toggleClass('active');
-    $('body').toggleClass('active');
+    // show navigation
+    $('.links').addClass('active');
+    $('body .menu-overlay').addClass('active');
   })
+  $('#quite-btn').click(function(){
 
-  $('.mobile-nav .mobile-links li a').click(function(event){
-    event.preventDefault()
+    // hide navigation
+    $('.links').removeClass('active');
+    $('body .menu-overlay').removeClass('active');
   })
   
-  
+
+  // Show & Hide Hire Box
+  $('#hire-btn').click(function() {
+    $('.hire').fadeIn(600)
+  })
+  $('#quite-btn-2').click(function() {
+    $('.hire').fadeOut(600)
+  })
+
 
   // scroll to Top
   var scrollBtn = $('.scroll-top');
@@ -34,16 +39,10 @@ $(document).ready(function(){
   })
   win.scroll(function(){
     if(win.scrollTop() > 600 ) {
-      scrollBtn.show();
+      scrollBtn.fadeIn(600);
     }else {
-      scrollBtn.hide();
+      scrollBtn.fadeOut(600);
     } 
   })
-  scrollBtn.hide();
-  
-
-
-
-  $('.contact-message').css('height' , $('.contact-inputs').height());
 });
 

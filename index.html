@@ -11,6 +11,7 @@
 		<title>Tanatos Web Template</title>
 	</head>
 	<body>
+		<div class="menu-overlay"></div>
 		<!-- start Header -->
 		<header class="header">
 			<div class="overlay"></div>
@@ -25,7 +26,7 @@
 								</div>
 							</div>
 							<div class="col-lg-2">
-								<div class="menu">
+								<div class="menu" id="menu-btn">
 									<p>Menu</p>
 									<i class="fa fa-bars"></i>
 								</div>
@@ -33,6 +34,40 @@
 						</div>
 					</div>
 				</section>
+
+				<section class="links text-center">
+					<div class="quite-btn" id='quite-btn'>
+						<i class="fa fa-times fa-2x"></i>
+					</div>
+
+					<ul class="list-unstyled">
+						<li class="active">Home</li>
+						<li>About Us</li>
+						<li>Services</li>
+						<li>Our Works</li>
+						<li>Contact</li>
+					</ul>
+					<ul class="list-inline social-icons">
+						<li>
+							<img src="img/social/facebook.png" alt="" class="img-responsive">
+						</li>
+						<li>
+							<img src="img/social/twitter.png" alt="" class="img-responsive">
+						</li>
+						<li>
+							<img src="img/social/google.png" alt="" class="img-responsive">
+						</li>
+						<li>
+							<img src="img/social/bascket.png" alt="" class="img-responsive">
+						</li>
+						<li>
+							<img src="img/social/be.png" alt="" class="img-responsive">
+						</li>
+					</ul>
+				</section>
+
+
+
 				<!-- end Navbar -->
 				<!-- start Hero -->
 				<div class="hero">
@@ -41,7 +76,7 @@
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br class="hidden-xs"> Aspernatur repellendus, omnis aut, eos delectus ex voluptate nisi optio culpa repudiandae 
 					</p>
 					<div class="btn-container">
-						<div class="hire-us button">
+						<div class="hire-us button" id='hire-btn'>
 							Hire Us
 						</div>
 						<div class="our-works button">
@@ -78,7 +113,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 margin-xs-40">
 						<div class="service">
 							<div class="icon-container">
 								<div class="icon"></div>
@@ -462,6 +497,31 @@
 		<!-- end Footer -->
 
 
+		<!-- Start Hire Us Box -->
+		<section class="hire text-center">
+			<div class="quit-btn" id='quite-btn-2'>
+				<i class="fa fa-times"></i>
+			</div>
+
+			<h2 class="head-2">Hire <span>Us</span></h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Laudantium ipsum dignissimos quos
+			</p>
+			<div class="contact-us">
+				<input type="email" placeholder="Your Email">
+				<input type="text" placeholder="Subject">
+				<textarea placeholder="Your Message"></textarea>
+			</div>
+			<div class="button center-block">Send Message</div>
+		</section>
+		<!-- end Hire Us Box -->
+
+
+		<!-- start scroll Top -->
+		<div class="scroll-top">
+			<i class="fa fa-chevron-up"></i>
+		</div>
+		<!-- end scroll Top -->
 
 		<script src="js/jquery-3.6.0.min.js"></script>
 		<script src="js/main.js"></script>
