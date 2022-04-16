@@ -90,7 +90,7 @@ body .menu-overlay.active {
 }
 .links {
   position: fixed;
-  z-index: 30;
+  z-index: 999;
   background-color: var(--secondaryColor);
   padding: 50px 20px;
   padding-top: 80px;
