@@ -124,6 +124,11 @@ body .menu-overlay.active {
     right: 24%;
   }
 }
+@media (max-width:500px) {
+  .links .quite-btn {
+    right: 30%;
+  }
+}
 .links ul:first-of-type {
   position: relative;
 }
