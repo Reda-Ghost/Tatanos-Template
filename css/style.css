@@ -90,7 +90,7 @@ body .menu-overlay.active {
 }
 .links {
   position: fixed;
-  z-index: 999;
+  z-index: 30;
   background-color: var(--secondaryColor);
   padding: 50px 20px;
   padding-top: 80px;
@@ -659,7 +659,7 @@ body .menu-overlay.active {
   width: 600px;
   box-shadow: 0 0 10px 1px var(--secondaryColor);
   background-color: white;
-  z-index: 99;
+  z-index: 9999;
   color: var(--secondaryColor);
   position: fixed;
   padding: 30px 50px;
