@@ -7,32 +7,30 @@ $(document).ready(function(){
 
   
   // switch Hide Show Navigation Links
+  let menuLinks = $('.menu-links')
   $('#menu-btn').click(function(){
-
     // show navigation
-    $('.links').addClass('active');
-    $('body .menu-overlay').addClass('active');
+    menuLinks.addClass('active');
   })
   $('#quite-btn').click(function(){
-
     // hide navigation
-    $('.links').removeClass('active');
-    $('body .menu-overlay').removeClass('active');
+    menuLinks.removeClass('active')
   })
   
 
   // Show & Hide Hire Box
+  let hireSection = $('.hire')
   $('#hire-btn').click(function() {
-    $('.hire').fadeIn(600)
+    hireSection.fadeIn(600)
   })
   $('#quite-btn-2').click(function() {
-    $('.hire').fadeOut(600)
+    hireSection.fadeOut(600)
   })
 
 
   // scroll to Top
-  var scrollBtn = $('.scroll-top');
-  var win = $(window);
+  let scrollBtn = $('.scroll-top'),
+      win = $(window);
 
   scrollBtn.click(function(){
     win.scrollTop(0)
